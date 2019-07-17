@@ -90,28 +90,3 @@ browser.element_check_keyword(keyword)
 
 puts "Close the browser"
 browser.close_browser
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
