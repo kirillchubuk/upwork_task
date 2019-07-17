@@ -7,9 +7,10 @@ class FirefoxBrowser < Selenium::WebDriver::Driver
 		# Initialize driver for firefox browser
 		@browser = Selenium::WebDriver.for :firefox
 		# Maximize the window
-		# @browser.manage.window.maximize
-		# # Delete all cookies
-		# @browser.manage.delete_all_cookies
+		@browser.manage.window.maximize
+		# Delete all cookies
+		@browser.manage.delete_all_cookies
+		# Doesn't work 
 		Selenium::WebDriver.logger.output = 'selenium.log'
 	end
 
@@ -49,8 +50,6 @@ class FirefoxBrowser < Selenium::WebDriver::Driver
 			i += 1 
 		end
 	end
-
-
 
 	def close_browser
 		@browser.quit
